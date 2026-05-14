@@ -66,7 +66,7 @@ The three Lambda functions are orchestrated by an **AWS Step Functions** state m
 
 ### Step 2 — Model Training and Deployment
 
-- Used the **AWS built-in Image Classification algorithm** (ResNet-152 architecture) via the SageMaker SDK.
+- Used the **AWS built-in Image Classification algorithm** via the SageMaker SDK.
 - Trained on an `ml.p3.2xlarge` GPU instance for 30 epochs.
 - Deployed the trained model to a real-time inference endpoint on an `ml.m5.xlarge` instance.
 - Configured **SageMaker Model Monitor** to capture inference data and track model performance over time.
